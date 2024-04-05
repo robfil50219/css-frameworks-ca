@@ -1,7 +1,7 @@
 {
   "name": "css-frameworks-ca",
   "version": "0.0.1",
-  "description": "A starting point for the CSS Frameworks CA project",
+  "description":"This project leverages Bootstrap and SASS to create responsive front-end designs for a social media application. It includes customized authentication, feed, and profile pages, showcasing modern web development practices and responsive design techniques.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch src/scss:index.scss:css/index.css",
@@ -18,7 +18,7 @@
     "SCSS",
     "SASS"
   ],
-  "author": "Oliver Dipple <oliver.dipple@noroff.no>",
+  "author": "Robert Filep <robfil50219@stud.noroff.no>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NoroffFEU/css-frameworks-ca/issues"
@@ -28,6 +28,7 @@
     "bootstrap": "^5.3.3",
     "sass": "^1.74.1"
   }
+
 }
 
 
