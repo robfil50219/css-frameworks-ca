@@ -1,12 +1,2 @@
 
 
-// Import Bootstrap's essentials for customization
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/_variables";
-@import "bootstrap/scss/mixins";
-
-// Import your variable overrides
-@import "_variables.scss";
-
-// Import the rest of Bootstrap
-@import "bootstrap/scss/bootstrap";

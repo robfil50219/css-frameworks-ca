@@ -1,9 +1,6 @@
+// Import your variable overrides
 @import "custom-bootstrap.scss";
 
-
-.content {
-  background-color: $body-bg; 
-}
-
-
+// Import the rest of Bootstrap
+@import "bootstrap/scss/bootstrap";
 
