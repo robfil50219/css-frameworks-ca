@@ -1,6 +1,4 @@
-// Import your variable overrides
-@import "custom-bootstrap.scss";
 
-// Import the rest of Bootstrap
 @import "bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/functions";
 

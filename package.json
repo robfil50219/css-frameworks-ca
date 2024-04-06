@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "This project leverages Bootstrap and SASS to create responsive front-end designs for a social media application. It includes customized authentication, feed, and profile pages, showcasing modern web development practices and responsive design techniques.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/scss:dist/css",
     "sass": "sass --watch src/scss:index.scss:css/index.css",
     "start": "live-server",
-    "compile:sass": "sass --watch src/scss:index.scss public/css/style.css"
+    "watch": "sass --watch src/scss:dist/css & live-server"
   },
   "repository": {
     "type": "git",
