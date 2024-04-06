@@ -9,6 +9,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="public/css/style.css" />
+    <script src="index.js">
+      defer
+    </script>
   </head>
   <body>
     <header class="bg-primary text-white text-center py-4">
@@ -48,7 +51,11 @@
                     Password must be at least 8 characters.
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">
+                <button
+                  id="loginButton"
+                  type="submit"
+                  class="btn btn-primary w-100"
+                >
                   Login
                 </button>
               </form>
