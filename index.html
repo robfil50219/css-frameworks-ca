@@ -21,7 +21,7 @@
           <div class="card">
             <div class="card-body">
               <h2 class="card-title text-center mb-4">Login to UnityGrid</h2>
-              <form id="loginForm" action="/profile" method="POST" novalidate>
+              <form id="loginForm" action="profile.html" method="POST">
                 <div class="mb-3">
                   <label for="email" class="form-label">Email address</label>
                   <input
@@ -52,7 +52,7 @@
                 <button
                   id="loginButton"
                   class="btn btn-primary w-100"
-                  onclick="event.preventDefault(); window.location.href='profile.html';"
+                  type="submit"
                 >
                   Login
                 </button>
