@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="sort.js" defer></script>
   </head>
   <body>
     <header class="bg-primary text-white text-center py-4">
@@ -40,11 +41,27 @@
         </div>
       </nav>
     </header>
+    <div class="container mt-3">
+      <input
+        type="text"
+        id="searchInput"
+        class="form-control"
+        placeholder="Search posts..."
+        onkeyup="filterPosts()"
+      />
+    </div>
+    <div class="container mt-3">
+      <select id="sortSelect" class="form-select" onchange="sortPosts()">
+        <option value="">Sort By</option>
+        <option value="title">Title</option>
+        <option value="date">Date</option>
+      </select>
+    </div>
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-8">
           <!-- First Post -->
-          <div class="card mb-3">
+          <div class="card mb-3" data-date="2024-01-01">
             <img
               src="images/cheese.webp"
               class="card-img-top"
@@ -63,11 +80,11 @@
             </div>
           </div>
           <!-- Second Post -->
-          <div class="card mb-3">
+          <div class="card mb-3" data-date="2024-02-14">
             <img
               src="images/elegence.webp"
               class="card-img-top"
-              alt="Elegent dress"
+              alt="Elegant dress"
             />
             <div class="card-body">
               <h5 class="card-title">Defining elegance anew</h5>
@@ -77,16 +94,16 @@
                 With every intricate detail and sweeping train, this dress isn't
                 just made for the red carpet, but for making history. Are you
                 ready to step into the spotlight? #EleganceRedefined
-                #HauteCouture #FashionForward"
+                #HauteCouture #FashionForward
               </p>
             </div>
           </div>
           <!-- Third Post -->
-          <div class="card mb-3">
+          <div class="card mb-3" data-date="2024-03-03">
             <img
               src="images/future.webp"
               class="card-img-top"
-              alt="futeristic city"
+              alt="futuristic city"
             />
             <div class="card-body">
               <h5 class="card-title">To the future</h5>
@@ -95,7 +112,7 @@
                 skyline with neon lights and gravity-defying cars. Where
                 technology soars as high as our dreams, the future isn't just
                 bright; it's dazzling. Are we in the year 3000 yet?
-                #CityOfTomorrow #FuturisticVibes #SciFiLife"
+                #CityOfTomorrow #FuturisticVibes #SciFiLife
               </p>
             </div>
           </div>
@@ -118,7 +135,7 @@
             </div>
           </div>
           <!-- Fifth Post -->
-          <div class="card mb-3">
+          <div class="card mb-3" data-date="2024-05-20">
             <img
               src="images/kitchen.webp"
               class="card-img-top"
@@ -135,14 +152,14 @@
             </div>
           </div>
           <!-- Sixth Post -->
-          <div class="card mb-3">
+          <div class="card mb-3" data-date="2024-06-30">
             <img
               src="images/fishing_lake.webp"
               class="card-img-top"
               alt="Serenity lake with boat and dock"
             />
             <div class="card-body">
-              <h5 class="card-title">Im going fishing</h5>
+              <h5 class="card-title">I'm going fishing</h5>
               <p class="card-text">
                 Cast your line into the sunset's glow, where the waters are as
                 calm as your heart. 🎣🌄 This is where the busy world fades and
